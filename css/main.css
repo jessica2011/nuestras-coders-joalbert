@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*para utilizar after o befor siempre debes colocar content: '', 
+aunque este vacio, te dibuja una linea hacia bajo si es after*/
+.title::after{
+    content: '';
+    width: 5%;
+    height: 8px;
+    background-color: black;
+    display:block;
+}
+
+figure {
+    width: 300px;
+    height: 300px;
+    background-color: rebeccapurple;
+    display: inline-block;
+    border: 1px solid yellow;
+    margin: 10px;
+    position: relative;
+}
+
+figure p {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
